@@ -1,4 +1,5 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- Link to schema: https://app.quickdatabasediagrams.com/#/d/TL2YeH
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 
@@ -21,8 +22,10 @@ CREATE TABLE "Subcategory" (
 CREATE TABLE "Campaign" (
     "cf_id" INT   NOT NULL,
     "contact_id" INT   NOT NULL,
-    "goal" INT   NOT NULL,
-    "pledged" INT   NOT NULL,
+    "company_name" VARCHAR(255)   NOT NULL,
+    "description" VARCHAR(255)   NOT NULL,
+    "goal" float   NOT NULL,
+    "pledged" float   NOT NULL,
     "outcome" VARCHAR(255)   NOT NULL,
     "backers_count" INT   NOT NULL,
     "country" VARCHAR(255)   NOT NULL,
